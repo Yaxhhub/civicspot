@@ -1,21 +1,35 @@
 {
-  "name": "civicspot",
+  "name": "civicspot-backend",
   "version": "1.0.0",
-  "description": "Smart City Issue Reporting & Community Cleanup Platform",
+  "description": "Backend for CivicSpot platform",
+  "main": "backend/server.js",
   "scripts": {
-    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "start": "node backend/server.js",
     "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
     "build": "cd frontend && npm run build",
-    "start": "cd backend && npm start",
-
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
     "setup-db": "cd backend && node scripts/setup-admin-system.js",
     "show-admins": "cd backend && node scripts/show-admin-info.js",
     "test-routes": "node test-routes.js"
   },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.40.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "multer": "^1.4.5-lts.1"
+  },
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
   },
   "keywords": ["civic", "reporting", "cleanup", "community", "smart-city"],
   "author": "CivicSpot Team",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
