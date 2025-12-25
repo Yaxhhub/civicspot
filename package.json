@@ -2,9 +2,9 @@
   "name": "civicspot-backend",
   "version": "1.0.0",
   "description": "Backend for CivicSpot platform",
-  "main": "backend/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "node server.js",
     "dev": "nodemon backend/server.js",
     "build": "echo 'No build step required'"
   },
