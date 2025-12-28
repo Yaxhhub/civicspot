@@ -1,7 +1,0 @@
-{
-  "name": "civicspot-monorepo",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "./build-frontend.sh"
-  }
-}
