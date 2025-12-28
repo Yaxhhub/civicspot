@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: civicspot-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/dist
+    envVars:
+      - key: VITE_MAPBOX_TOKEN
+        value: pk.eyJ1IjoieWF4aGh1YiIsImEiOiJjbWN5OWY4YnAwa2lrMnJxeGtpd2VwaG40In0.ZUAgUVKLyEeN9DLoY603tA
+      - key: VITE_API_URL
+        value: https://your-backend-url.onrender.com
