@@ -2,8 +2,9 @@ services:
   - type: web
     name: civicspot-frontend
     env: static
-    buildCommand: cd frontend && npm install && npm run build
-    staticPublishPath: ./frontend/dist
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    rootDir: ./frontend
     envVars:
       - key: VITE_MAPBOX_TOKEN
         value: pk.eyJ1IjoieWF4aGh1YiIsImEiOiJjbWN5OWY4YnAwa2lrMnJxeGtpd2VwaG40In0.ZUAgUVKLyEeN9DLoY603tA
