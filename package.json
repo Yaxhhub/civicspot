@@ -2,6 +2,6 @@
   "name": "civicspot-monorepo",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd frontend && npm install && vite build"
+    "build": "./build-frontend.sh"
   }
 }
